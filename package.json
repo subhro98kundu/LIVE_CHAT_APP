@@ -1,0 +1,31 @@
+{
+  "name": "live_chat_app",
+  "version": "1.0.0",
+  "description": "realtime chat web app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subhro98kundu/LIVE_CHAT_APP.git"
+  },
+  "author": "Subhranil Kundu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/subhro98kundu/LIVE_CHAT_APP/issues"
+  },
+  "homepage": "https://github.com/subhro98kundu/LIVE_CHAT_APP#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "express": "^4.17.3",
+    "moment": "^2.29.1",
+    "socket.io": "^4.4.1"
+  },
+  "engines": {
+    "node": "16.14.2"
+  }
+}

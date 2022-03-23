@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+/* #914c4c */
+:root {
+	--dark-color-a: #180A0Aa6;
+	--dark-color-b: #180A0A80;
+	--light-color: #FFE4C0b0;
+	--success-color: #FFA1C980;
+	--error-color: #EE4540;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: papyrus, sans-serif;
+    font-size: 16px;
+    min-height: 100vh;
+    /* background: var(--light-color); */
+    background-image: url('../images/harrybg.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+	margin: 0px;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    opacity: 0;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    opacity: 0;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: none;
+    opacity: 0;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--light-color);
+	color: black;
+    border: 0;
+    border-radius: 50px;
+	font-size: 17px;
+}
+
+/* Chat Page */
+
+.chat-container {
+    max-width: 100vw;
+	/* background: #fff; */
+	margin: 0px 0px;
+	overflow: hidden;
+}
+
+.chat-header {
+    background: var(--dark-color-a);
+    height: 10vh;
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chat-main {
+    display: grid;
+    height: 80vh;
+	grid-template-columns: 1fr 3fr;
+}
+
+.chat-sidebar {
+	background: var(--dark-color-b);
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.chat-sidebar h2 {
+	font-size: 20px;
+	background: rgba(0, 0, 0, 0.1);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.chat-sidebar h3 {
+	margin-bottom: 15px;
+}
+
+.chat-sidebar ul li {
+	padding: 10px 0;
+}
+
+.chat-messages {
+	padding: 30px;
+	max-height: 500px;
+	overflow-y: scroll;
+}
+
+.chat-messages .message {
+    padding: 10px;
+    font-size: 18px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+.chat-messages .message .meta {
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.chat-messages .message .meta span {
+	color: black;
+}
+
+.chat-form-container {
+    height: 10vh;
+	padding: 20px 20px;
+	background-color: var(--dark-color-b);
+}
+
+.chat-form-container form {
+	display: flex;
+}
+
+.chat-form-container input[type='text'] {
+	font-size: 17px;
+	padding: 20px 15px;
+    height: 40px;
+    border-radius: 50px;
+    border: 0px;
+	flex: 1;
+}
+
+.chat-messages .message {
+    padding: 10px;
+    font-size: 18px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	overflow-wrap: break-word;
+}
+
+.chat-messages .self-message{
+    font-size: 18px;
+	font-weight: bold;
+    color: black;
+    padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--light-color);
+	border-radius: 5px;
+	overflow-wrap: break-word;
+
+}
+
+.chat-messages .self-meta{
+    font-size: 18px;
+	font-weight: bold;
+	color: black;
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+
+/* Join Page */
+.join-container {
+	max-width: 500px;
+	margin: 80px auto;
+	color: #fff;
+}
+
+.join-header {
+	text-align: center;
+	padding: 20px;
+	background: var(--dark-color-a);
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.join-main {
+    font-family: papyrus, sans-serif;
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+.join-main p {
+	margin-bottom: 20px;
+}
+
+.join-main .form-control {
+    font-family: papyrus, sans-serif;
+	margin-bottom: 20px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+    font-family: papyrus, sans-serif;
+    font-weight: 500;
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main select {
+    font-family: papyrus, sans-serif;
+    font-weight: 1000;
+	font-size: 16px;
+	padding: 5px;
+	height: 40px;
+	width: 100%;
+}
+
+.join-main .btn {
+    font-family: papyrus, sans-serif;
+    font-weight: 1000;
+	margin-top: 20px;
+	width: 100%;
+}
+
+@media (max-width: 700px) {
+	.chat-main {
+		display: block;
+	}
+
+	.chat-sidebar {
+		display: none;
+	}
+}

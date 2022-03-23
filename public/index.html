@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>Hogwarts School of Cozards</title>
+	</head>
+	<body>
+		<div class="join-container">
+			<header class="join-header">
+				<h1><i class="fas fa-quidditch"></i> Hogwarts School of Cozards</h1>
+			</header>
+			<main class="join-main">
+				<form action="chat.html">
+					<div class="form-control">
+						<label for="username">Cozardname</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter Cozardname..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<label for="room">Room</label>
+						<select name="room" id="room">
+							<option value="Gryffindor">Gryffindor</option>
+							<option value="Ravenclaw">Ravenclaw</option>
+							<option value="Hufflepuff">Hufflepuff</option>
+							<option value="Slytherin">Slytherin</option>
+							<option value="Sorcerer's Ruby">Sorcerer's Ruby</option>
+                            <option value="Deathly Java">Deathly Java</option>
+                            <option value="Seeker++">Seeker++</option>
+						</select>
+					</div>
+					<button type="submit" class="btn">Aparacium</button>
+				</form>
+			</main>
+        </div>
+        <script>
+            let username = localStorage.getItem('username');
+            let room = localStorage.getItem('room');
+            if(username){
+                location.href = `./chat.html?username=${username}&room=${room}`;
+            }
+        </script>
+	</body>
+</html>
